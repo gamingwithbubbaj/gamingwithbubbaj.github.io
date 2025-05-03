@@ -55,7 +55,7 @@
   main {
     flex: 3;
     padding: 20px;
-    background: white;
+    background: #ff6600;
     margin-right: 20px;
   }
   
@@ -63,12 +63,12 @@
   aside {
     flex: 1;
     padding: 20px;
-    background: #eee;
+    background: #eeeeee;
   }
   
   /* Footer */
   footer {
-    background: #333;
+    background: #333333;
     color: white;
     text-align: center;
     padding: 1rem 0;
