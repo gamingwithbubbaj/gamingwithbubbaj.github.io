@@ -9,7 +9,7 @@
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background: #f4f4f4;
-    color: #333;
+    color: #555;
   }
   
   /* Header */
@@ -22,7 +22,7 @@
   
   /* Navigation */
   nav {
-    background: #444;
+    background: #555;
   }
   nav ul {
     display: flex;
@@ -55,7 +55,7 @@
   main {
     flex: 3;
     padding: 20px;
-    background: #ff6600;
+    background: #555;
     margin-right: 20px;
   }
   
@@ -68,7 +68,7 @@
   
   /* Footer */
   footer {
-    background: #333333;
+    background: #555;
     color: white;
     text-align: center;
     padding: 1rem 0;
