@@ -3,16 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Frick you</title>
+  <title>Interactive Website</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>Ligma</h1>
+    <h1>My Website</h1>
+    <button id="darkModeToggle">🌙 Toggle Dark Mode</button>
   </header>
 
   <nav>
-    <ul>
+    <button id="menuToggle">☰ Menu</button>
+    <ul id="navMenu">
       <li><a href="#">Home</a></li>
       <li><a href="#">About</a></li>
       <li><a href="#">Services</a></li>
@@ -22,18 +24,23 @@
 
   <div class="container">
     <main>
-      <h2>gamingwithbubbaj</h2>
-      <p>frick you.</p>
+      <h2>Welcome</h2>
+      <p>This is the main content section of the website.</p>
+      <p style="margin-top: 1000px;">Scroll down for the back-to-top button.</p>
     </main>
 
     <aside>
-      <h3>links</h3>
-      <p>https://www.twitch.tv/gamingwithbubbaj</p>
+      <h3>Sidebar</h3>
+      <p>Some additional info or links can go here.</p>
     </aside>
   </div>
 
   <footer>
-    <p>&copy; 2025 Balls</p>
+    <p>&copy; 2025 My Website</p>
   </footer>
+
+  <button id="backToTop">↑ Top</button>
+
+  <script src="script.js"></script>
 </body>
 </html>

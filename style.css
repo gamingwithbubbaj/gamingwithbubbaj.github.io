@@ -1,87 +1,60 @@
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background: #f4f4f4;
-    color: #555;
-  }
-  
-  /* Header */
-  header {
-    background: #333;
-    color: #fff;
-    padding: 1rem 0;
-    text-align: center;
-  }
-  
-  /* Navigation */
-  nav {
-    background: #555;
-  }
-  nav ul {
-    display: flex;
-    list-style: none;
-    justify-content: center;
-  }
-  nav li {
-    margin: 0 15px;
-  }
-  nav a {
+/* ... keep previous styles ... */
+
+/* Menu toggle button */
+#menuToggle {
+    display: none;
+    background: #444;
     color: white;
-    text-decoration: none;
+    border: none;
     padding: 1rem;
-    display: block;
-  }
-  nav a:hover {
-    background: #555;
+    width: 100%;
   }
   
-  /* Container */
-  .container {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 20px;
-    max-width: 1200px;
-    margin: auto;
+  /* Dark mode */
+  body.dark {
+    background: #121212;
+    color: #ddd;
+  }
+  body.dark header,
+  body.dark nav,
+  body.dark footer {
+    background: #1e1e1e;
+  }
+  body.dark main,
+  body.dark aside {
+    background: #2a2a2a;
+  }
+  body.dark a {
+    color: #aaf;
   }
   
-  /* Main Content */
-  main {
-    flex: 3;
-    padding: 20px;
-    background: #555;
-    margin-right: 20px;
-  }
-  
-  /* Sidebar */
-  aside {
-    flex: 1;
-    padding: 20px;
-    background: #eeeeee;
-  }
-  
-  /* Footer */
-  footer {
-    background: #555;
+  /* Back to top */
+  #backToTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: none;
+    background: #333;
     color: white;
-    text-align: center;
-    padding: 1rem 0;
-    margin-top: 20px;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
   }
   
-  /* Responsive */
+  /* Responsive nav menu */
   @media (max-width: 768px) {
-    .container {
+    nav ul {
       flex-direction: column;
+      display: none;
     }
-    main {
-      margin-right: 0;
+  
+    nav ul.show {
+      display: flex;
+    }
+  
+    #menuToggle {
+      display: block;
     }
   }
   
