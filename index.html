@@ -4,24 +4,27 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Digital Stage</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
+  <!-- Navigation -->
   <nav class="navbar">
     <div class="logo">🎬 Digital Stage</div>
     <ul class="nav-links">
-      <li><a href="#">Live</a></li>
-      <li><a href="#">Timeline</a></li>
-      <li><a href="#">Collabs</a></li>
-      <li><a href="#">Fans</a></li>
-      <li><a href="#">Support</a></li>
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#live">Live</a></li>
+      <li><a href="#timeline">Timeline</a></li>
+      <li><a href="#collabs">Collabs</a></li>
+      <li><a href="#fans">Fans</a></li>
+      <li><a href="#support">Support</a></li>
     </ul>
   </nav>
 
-  <header class="hero">
+  <!-- Hero Stage -->
+  <header id="hero" class="hero">
     <video autoplay muted loop id="heroVideo">
-      <source src="rickroll.mp4" type="video/mp4" />
+      <source src="assets/videos/your-highlight-reel.mp4" type="video/mp4" />
       Your browser does not support HTML5 video.
     </video>
     <div class="hero-overlay">
@@ -31,6 +34,57 @@
     </div>
   </header>
 
-  <script src="script.js"></script>
+  <!-- Live Integration Zone -->
+  <section id="live" class="live-zone">
+    <div class="stream-container">
+      <!-- YouTube or Twitch Embed -->
+      <iframe id="liveStream" src="" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="chat-container">
+      <!-- Chat Embed -->
+      <iframe id="liveChat" src="" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="countdown">
+      Next Stream Starts In: <span id="countdownTimer">Loading...</span>
+    </div>
+  </section>
+
+  <!-- Interactive Timeline -->
+  <section id="timeline" class="timeline">
+    <h2>Interactive Timeline</h2>
+    <div class="timeline-container" id="timelineContainer">
+      <!-- Timeline items will be injected here -->
+    </div>
+  </section>
+
+  <!-- Collab Wall -->
+  <section id="collabs" class="collab-wall">
+    <h2>Collab Wall</h2>
+    <div class="collab-container" id="collabContainer">
+      <!-- Collab items will be injected here -->
+    </div>
+  </section>
+
+  <!-- Fan Shoutout Section -->
+  <section id="fans" class="fan-shoutouts">
+    <h2>Fan Shoutouts</h2>
+    <div class="fan-container" id="fanContainer">
+      <!-- Fan content will be injected here -->
+    </div>
+  </section>
+
+  <!-- Merch & Support Tab -->
+  <section id="support" class="support-section">
+    <h2>Support & Merch</h2>
+    <div class="support-container">
+      <a href="https://yourstore.com" target="_blank">🛒 Visit Store</a>
+      <a href="https://patreon.com/yourchannel" target="_blank">❤️ Patreon</a>
+      <a href="https://ko-fi.com/yourchannel" target="_blank">☕ Ko-fi</a>
+      <a href="https://youtube.com/yourchannel/join" target="_blank">💎 YouTube Membership</a>
+    </div>
+  </section>
+
+  <script src="js/api.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
