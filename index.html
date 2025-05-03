@@ -3,43 +3,33 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Interactive Website</title>
+  <title>Digital Stage</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>My Website</h1>
-    <button id="darkModeToggle">🌙 Toggle Dark Mode</button>
-  </header>
 
-  <nav>
-    <button id="menuToggle">☰ Menu</button>
-    <ul id="navMenu">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Services</a></li>
-      <li><a href="#">Contact</a></li>
+  <nav class="navbar">
+    <div class="logo">🎬 Digital Stage</div>
+    <ul class="nav-links">
+      <li><a href="#">Live</a></li>
+      <li><a href="#">Timeline</a></li>
+      <li><a href="#">Collabs</a></li>
+      <li><a href="#">Fans</a></li>
+      <li><a href="#">Support</a></li>
     </ul>
   </nav>
 
-  <div class="container">
-    <main>
-      <h2>Welcome</h2>
-      <p>This is the main content section of the website.</p>
-      <p style="margin-top: 1000px;">Scroll down for the back-to-top button.</p>
-    </main>
-
-    <aside>
-      <h3>Sidebar</h3>
-      <p>Some additional info or links can go here.</p>
-    </aside>
-  </div>
-
-  <footer>
-    <p>&copy; 2025 My Website</p>
-  </footer>
-
-  <button id="backToTop">↑ Top</button>
+  <header class="hero">
+    <video autoplay muted loop id="heroVideo">
+      <source src="rickroll.mp4" type="video/mp4" />
+      Your browser does not support HTML5 video.
+    </video>
+    <div class="hero-overlay">
+      <div class="badge live">🔴 Live Now</div>
+      <div class="badge new">✨ New Video</div>
+      <div class="badge clips">🎞️ Top Clips</div>
+    </div>
+  </header>
 
   <script src="script.js"></script>
 </body>
